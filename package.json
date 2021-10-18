@@ -1,0 +1,19 @@
+{
+  "name": "lbuckley-palindrome",
+  "version": "0.1.0",
+  "description": "Palindrome detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leahbuckley/js-palindrome.git"
+  },
+  "author": "Leah Buckley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leahbuckley/js-palindrome/issues"
+  },
+  "homepage": "https://github.com/leahbuckley/js-palindrome#readme"
+}
