@@ -14,17 +14,20 @@ String.prototype.blank = function() {
 function Phrase(content) {
   this.content = content;
 
-  this.processor = function(string) {
-    return string.toLowerCase();
-  }
-
+// Returns content processed for palindrome testing.
   this.processedContent = function processedContent() {
-    return this.processor(this.content);
+    return this.letters().toLowerCase();
   }
 
+  //Returns the letters in the content.
+  // for example:
+  // new Phrase("Hello, world!").letters() === "Helloworld"
+  this.letters = function letters() {
+    return (this.content.match(/[a-z]/gi) || []).join("");
+  }
   // returns true if the phrase is a palindrome, false otherwise.
   this.palindrome = function palindrome() {
-  return this.processedContent() === reverse(this.processedContent());
+  return this.processedContent() === this.processedContent().reverse();
   }
 }
 

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leahbuckley/js-palindrome/issues"
   },
-  "homepage": "https://github.com/leahbuckley/js-palindrome#readme"
+  "homepage": "https://github.com/leahbuckley/js-palindrome#readme",
+  "dependencies": {
+    "mocha": "^9.1.3"
+  }
 }
